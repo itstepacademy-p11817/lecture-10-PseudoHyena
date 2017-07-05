@@ -16,7 +16,7 @@ int main() {
 	std::cin >> year2;
 
 	int sum = 0;
-	sum += std::abs(year1 - year2) * 365 + std::abs(year1 - year2) / 4;
+	sum += std::abs(year1 - year2 + 1) * 365 + std::abs(year1 - year2) / 4;
 
 	int day_in_month[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 	if (month2 > month1) {
